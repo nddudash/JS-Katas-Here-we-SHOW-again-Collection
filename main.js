@@ -241,42 +241,57 @@ Kata16Div.append(Div16Total);
 
 //#17
 let Kata17Div = document.createElement(`div`);
-Kata17Div.classList.add(`KataDiv`)
-documentBody.append(Kata17Div)
+Kata17Div.classList.add(`KataDiv`);
+documentBody.append(Kata17Div);
 let Kata17Title = document.createElement(`h1`);
-Kata17Title.classList.add(`KataTitle`)
-Kata17Title.append("Kata #17")
-Kata17Div.append(Kata17Title)
+Kata17Title.classList.add(`KataTitle`);
+Kata17Title.append("Kata #17");
+Kata17Div.append(Kata17Title);
 
 let Div17And18Array = [];
 for (let index1718 = 0; index1718 < sampleArray.length; index1718++) {
-    let currentNumber = parseInt(sampleArray[index1718])
-    Div17And18Array.push(currentNumber)
+    let currentNumber = parseInt(sampleArray[index1718]);
+    Div17And18Array.push(currentNumber);
 }
-console.log(Div17And18Array)
+console.log(Div17And18Array);
 
 //DEVELOPER COMMENT: I have no idea what the heck ... operator actually does or how it really works, but it seems to get the job done so...
 
-Kata17Div.append(Math.min(...Div17And18Array))
+Kata17Div.append(Math.min(...Div17And18Array));
 
 //#18
 let Kata18Div = document.createElement(`div`);
-Kata18Div.classList.add(`KataDiv`)
-documentBody.append(Kata18Div)
+Kata18Div.classList.add(`KataDiv`);
+documentBody.append(Kata18Div);
 let Kata18Title = document.createElement(`h1`);
-Kata18Title.classList.add(`KataTitle`)
-Kata18Title.append("Kata #18")
-Kata18Div.append(Kata18Title)
+Kata18Title.classList.add(`KataTitle`);
+Kata18Title.append("Kata #18");
+Kata18Div.append(Kata18Title);
 
-Kata18Div.append(Math.max(...Div17And18Array))
+Kata18Div.append(Math.max(...Div17And18Array));
 
 //BONUS STUFF
-let bonusBoxesContainer = document.createElement('div')
-bonusBoxesContainer.classList.add('bonusBoxContainer')
-documentBody.append(bonusBoxesContainer)
 //19
-for (index19 = 0; index19 < 20; index19++) {
-    let greyBox = document.createElement('div')
-    greyBox.classList.add('greyBox')
-    bonusBoxesContainer.appendChild(greyBox)
+let bonusBoxesContainer1 = document.createElement('div');
+bonusBoxesContainer1.classList.add('bonusBoxContainer');
+documentBody.append(bonusBoxesContainer1);
+
+for (index19 = 0; index19 < 20; index19 ++) {
+    let greyBox = document.createElement('div');
+    greyBox.classList.add('greyBox');
+    bonusBoxesContainer1.appendChild(greyBox);
+}
+
+//20
+let bonusBoxesContainer2 = document.createElement('div');
+bonusBoxesContainer2.classList.add('bonusBoxContainer');
+documentBody.append(bonusBoxesContainer2);
+
+let elementWidth = 100;
+for (index20 = 1; index20 < 20; index20 ++) {
+    let evenGrowthBoxes = document.createElement('div');
+    evenGrowthBoxes.classList.add(`evenGrowthBoxes`);
+    bonusBoxesContainer2.appendChild(evenGrowthBoxes);
+    evenGrowthBoxes.style.width(`${elementWidth}px`)
+    elementWidth += 5;
 }
