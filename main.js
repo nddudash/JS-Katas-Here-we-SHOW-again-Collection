@@ -275,6 +275,10 @@ Kata18Div.append(Math.max(...Div17And18Array));
 let bonusBoxesContainer1 = document.createElement('div');
 bonusBoxesContainer1.classList.add('bonusBoxContainer');
 documentBody.append(bonusBoxesContainer1);
+let Kata19Title = document.createElement(`h1`)
+Kata19Title.append(`Kata #19`);
+Kata19Title.classList.add(`bonusBoxTitle`)
+bonusBoxesContainer1.append(Kata19Title);
 
 for (index19 = 0; index19 < 20; index19 ++) {
     let greyBox = document.createElement('div');
@@ -286,12 +290,73 @@ for (index19 = 0; index19 < 20; index19 ++) {
 let bonusBoxesContainer2 = document.createElement('div');
 bonusBoxesContainer2.classList.add('bonusBoxContainer');
 documentBody.append(bonusBoxesContainer2);
+let Kata20Title = document.createElement(`h1`)
+Kata20Title.append(`Kata #20`);
+Kata20Title.classList.add(`bonusBoxTitle`)
+bonusBoxesContainer2.append(Kata20Title);
 
 let elementWidth = 100;
-for (index20 = 1; index20 < 20; index20 ++) {
+for (index20 = 0; index20 < 20; index20 ++) {
     let evenGrowthBoxes = document.createElement('div');
     evenGrowthBoxes.classList.add(`evenGrowthBoxes`);
     bonusBoxesContainer2.appendChild(evenGrowthBoxes);
-    evenGrowthBoxes.style.width(`${elementWidth}px`)
+    evenGrowthBoxes.style.width =`${elementWidth}px`
     elementWidth += 5;
+}
+
+//21
+let bonusBoxesContainer3 = document.createElement(`div`);
+bonusBoxesContainer3.classList.add(`bonusBoxContainer`);
+documentBody.append(bonusBoxesContainer3);
+let Kata21Title = document.createElement(`h1`)
+Kata21Title.append(`Kata #21`);
+Kata21Title.classList.add(`bonusBoxTitle`)
+bonusBoxesContainer3.append(Kata21Title);
+
+for (index21 = 0; index21 < sampleArray.length; index21++) {
+    let sampleArrayWidthBoxes = document.createElement(`div`);
+    sampleArrayWidthBoxes.classList.add(`sampleArrayWidthBoxes`);
+    bonusBoxesContainer3.appendChild(sampleArrayWidthBoxes)
+    let sampleArrayBoxWidth = sampleArray[index21]
+    sampleArrayWidthBoxes.style.width = `${sampleArrayBoxWidth}px`
+}
+
+//22
+let bonusBoxesContainer4 = document.createElement(`div`);
+bonusBoxesContainer4.classList.add(`bonusBoxContainer`);
+documentBody.append(bonusBoxesContainer4);
+let Kata22Title = document.createElement(`h1`)
+Kata22Title.append(`Kata #22`);
+Kata22Title.classList.add(`bonusBoxTitle`)
+bonusBoxesContainer4.append(Kata22Title);
+
+for (index22 = 0; index22 < sampleArray.length; index22++) {
+    let sampleArrayWidthBoxesButAlternatesColor = document.createElement(`div`);
+    sampleArrayWidthBoxesButAlternatesColor.classList.add(`sampleArrayWidthBoxesButAlternatesColor`);
+    bonusBoxesContainer4.appendChild(sampleArrayWidthBoxesButAlternatesColor)
+    let sampleArrayBoxWidth = sampleArray[index22]
+    sampleArrayWidthBoxesButAlternatesColor.style.width = `${sampleArrayBoxWidth}px`
+    if (index22 % 2 === 1) {
+        sampleArrayWidthBoxesButAlternatesColor.style.backgroundColor = 'red';
+    }
+}
+
+//23
+let bonusBoxesContainer5 = document.createElement(`div`);
+bonusBoxesContainer5.classList.add(`bonusBoxContainer`);
+documentBody.append(bonusBoxesContainer5);
+let Kata23Title = document.createElement(`h1`)
+Kata23Title.append(`Kata #23`);
+Kata23Title.classList.add(`bonusBoxTitle`)
+bonusBoxesContainer5.append(Kata23Title);
+
+for (index23 = 0; index23 < sampleArray.length; index23++) {
+    let sampleArrayWidthBoxesButColorChangesOnWidth = document.createElement(`div`);
+    sampleArrayWidthBoxesButColorChangesOnWidth.classList.add(`sampleArrayWidthBoxesButColorChangesOnWidth`);
+    bonusBoxesContainer5.appendChild(sampleArrayWidthBoxesButColorChangesOnWidth)
+    let sampleArrayBoxWidth = sampleArray[index23]
+    sampleArrayWidthBoxesButColorChangesOnWidth.style.width = `${sampleArrayBoxWidth}px`
+    if (sampleArrayBoxWidth % 2 === 0) {
+        sampleArrayWidthBoxesButColorChangesOnWidth.style.backgroundColor = 'red';
+    }
 }

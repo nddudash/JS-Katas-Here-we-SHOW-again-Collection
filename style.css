@@ -19,9 +19,14 @@
     flex-wrap: wrap;
     width: 80%;
     margin: 20px auto;
+    padding: 10px;
     justify-content: center;
     align-items: center;
-   
+}
+
+.bonusBoxTitle {
+    width: 100%;
+    text-align: center;
 }
 
 .greyBox {
@@ -34,6 +39,30 @@
 
 .evenGrowthBoxes {
     background-color: grey;
+    height: 20px;
+    width: 105px;
+    border: 1px solid black;
+    margin: 2px;
+}
+
+.sampleArrayWidthBoxes {
+    background-color:grey;
+    height: 20px;
+    width: 100px;
+    border: 1px solid black;
+    margin: 2px;
+}
+
+.sampleArrayWidthBoxesButAlternatesColor {
+    background-color:grey;
+    height: 20px;
+    width: 100px;
+    border: 1px solid black;
+    margin: 2px;
+}
+
+.sampleArrayWidthBoxesButColorChangesOnWidth {
+    background-color:grey;
     height: 20px;
     width: 100px;
     border: 1px solid black;
